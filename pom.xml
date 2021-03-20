@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tech.guyi.component</groupId>
-    <artifactId>runner-flows</artifactId>
+    <artifactId>node-flows</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>flows-endpoint-api</module>
+        <module>node-flows-api</module>
         <module>flows-application</module>
         <module>flows-endpoint-defaults</module>
     </modules>
