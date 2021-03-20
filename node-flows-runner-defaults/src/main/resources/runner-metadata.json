@@ -1,0 +1,38 @@
+[
+  {
+    "type": "Input",
+    "name": "UDP服务",
+    "runner": "tech.guyi.component.flows.endpoint.input.UdpRunner",
+    "properties": [
+      {
+        "key": "port",
+        "type": "NUMBER",
+        "detail": "UDP服务端口"
+      }
+    ]
+  },
+  {
+    "type": "Mid",
+    "name": "JavaScript引擎",
+    "runner": "tech.guyi.component.flows.endpoint.mid.JavaScriptRunner",
+    "properties": [
+      {
+        "key": "function",
+        "type": "JavaScript",
+        "detail": "JavaScript脚本"
+      }
+    ]
+  },
+  {
+    "type": "Mid",
+    "name": "Byte数组转换",
+    "runner": "tech.guyi.component.flows.endpoint.mid.ByteToStringRunner",
+    "properties": []
+  },
+  {
+    "type": "Output",
+    "name": "控制台",
+    "runner": "tech.guyi.component.flows.endpoint.output.ConsoleRunner",
+    "properties": []
+  }
+]

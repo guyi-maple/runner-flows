@@ -51,11 +51,17 @@ public class NodeFlowContext extends HashMap<String,Object> {
     }
 
     public void start(Object params){
-        this.service.submit(() -> this.node.getRunner().run(
-                this,
-                params,
-                this.node.getProperties()
-        ));
+        this.service.submit(() -> {
+            try {
+                this.node.getRunner().run(
+                        this,
+                        params,
+                        this.node.getProperties()
+                );
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        });
     }
 
     /**

@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>tech.guyi.component</groupId>
-            <artifactId>flows-endpoint-api</artifactId>
+            <artifactId>node-flows-api</artifactId>
             <version>${version}</version>
         </dependency>
         <dependency>

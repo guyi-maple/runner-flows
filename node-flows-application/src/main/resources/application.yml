@@ -18,3 +18,5 @@ tech:
             handler:
               enable: true
               stack-trace: true
+        cors:
+          enable: true

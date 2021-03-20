@@ -2,6 +2,7 @@ package tech.guyi.component.flows.db.entity;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import tech.guyi.component.flows.db.entry.NodePosition;
 import tech.guyi.component.flows.db.entry.NodeProperties;
 import tech.guyi.web.quick.service.entity.QuickUuidEntity;
 
@@ -19,6 +20,7 @@ public class NodeEntity extends QuickUuidEntity {
     private String name;
     private String detail;
     private String runner;
+    private NodePosition position;
     private NodeProperties properties;
 
 }
